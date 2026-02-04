@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Dark Web3 Theme - Deep navy base with teal accents */
+    --background: 220 30% 6%;
+    --foreground: 180 20% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 180 20% 95%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 180 20% 95%;
+
+    /* Teal/Cyan primary from logo */
+    --primary: 168 80% 45%;
+    --primary-foreground: 220 30% 6%;
+
+    --secondary: 220 25% 15%;
+    --secondary-foreground: 180 20% 95%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 15% 55%;
+
+    --accent: 168 70% 40%;
+    --accent-foreground: 220 30% 6%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 168 80% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --glow: 168 80% 50%;
+    --surface: 220 25% 12%;
+    --surface-light: 220 20% 18%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(168 80% 45%), hsl(180 70% 50%));
+    --gradient-aurora: linear-gradient(180deg, hsl(220 30% 6%) 0%, hsl(220 35% 10%) 50%, hsl(180 30% 12%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(220 25% 12%) 0%, hsl(220 30% 8%) 100%);
+  }
+
+  .dark {
+    --background: 220 30% 6%;
+    --foreground: 180 20% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(168 80% 50%), hsl(180 70% 55%));
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 40px -10px hsl(168 80% 50% / 0.5);
+  }
+
+  .glow-subtle {
+    box-shadow: 0 0 60px -20px hsl(168 80% 50% / 0.3);
+  }
+
+  .glass {
+    @apply bg-card/60 backdrop-blur-xl border border-border/50;
+  }
+
+  .glass-strong {
+    @apply bg-card/80 backdrop-blur-2xl border border-border/60;
+  }
+}
