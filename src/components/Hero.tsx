@@ -42,7 +42,7 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in"
             style={{ animationDelay: '0.3s', opacity: 0 }}
           >
-            Polaris Nodes is a Finland-based node operator focused on building and operating reliable infrastructure for multiple blockchains.
+            PolarisNodes is a Finland-based node operator focused on building and operating reliable infrastructure for multiple blockchains.
           </p>
 
           {/* CTA Button */}
