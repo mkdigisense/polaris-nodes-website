@@ -44,6 +44,9 @@ const Contact = () => {
             We are always open to new opportunities and collaborations across the blockchain and crypto ecosystem.
           </p>
         </div>
+        <div className="max-w-xl mx-auto">
+          <p><pre>marko.hiltunen(a)polarisnodes.fi</pre></p>
+        </div>
       </div>
     </section>
   );
