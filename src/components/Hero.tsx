@@ -19,23 +19,30 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 pt-24 pb-16 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Logo Icon */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-4">
             <img 
               src={polarisLogo} 
               alt="PolarisNodes" 
-              className="h-24 md:h-32 w-auto animate-fade-in glow-subtle"
+              className="h-44 md:h-56 w-auto animate-fade-in"
               style={{ animationDelay: '0.1s' }}
             />
           </div>
 
-          {/* Headline */}
+          {/* Name */}
           <h1 
-            className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in"
+            className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 animate-fade-in"
             style={{ animationDelay: '0.2s', opacity: 0 }}
           >
-            Node Operations for{' '}
-            <span className="text-gradient">Decentralized Networks</span>
+            <span className="text-gradient">PolarisNodes</span>
           </h1>
+
+          {/* Tagline */}
+          <h2 
+            className="font-display text-xl md:text-2xl lg:text-3xl text-foreground mb-6 animate-fade-in"
+            style={{ animationDelay: '0.25s', opacity: 0 }}
+          >
+            Node Operations for Decentralized Networks
+          </h2>
 
           {/* Subheadline */}
           <p 

@@ -22,8 +22,11 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const subject = encodeURIComponent(`Contact from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'N/A'}\n\nMessage:\n${formData.message}`
+    );
+    window.location.href = `mailto:marko.hiltunen@polarisnodes.fi?subject=${subject}&body=${body}`;
     
     setSubmitted(true);
     setIsSubmitting(false);

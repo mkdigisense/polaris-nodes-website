@@ -2,24 +2,24 @@ import { Linkedin } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Alex Virtanen",
-    title: "Founder & Lead Engineer",
-    linkedin: "https://linkedin.com",
+    name: "Marko Hiltunen",
+    title: "Finance and Management",
+    linkedin: "https://www.linkedin.com/in/marko-hiltunen-846254150/",
   },
   {
-    name: "Maria Korhonen",
-    title: "Infrastructure Architect",
-    linkedin: "https://linkedin.com",
+    name: "Miika Keisu",
+    title: "Technical Lead",
+    linkedin: "https://www.linkedin.com/in/miika-keisu/",
   },
   {
-    name: "Jukka Nieminen",
-    title: "DevOps Specialist",
-    linkedin: "https://linkedin.com",
+    name: "Janne Anttila",
+    title: "Projects and Operations",
+    linkedin: "https://www.linkedin.com/in/janne-anttila-a7a793b4/",
   },
   {
-    name: "Sofia Mäkelä",
-    title: "Operations Manager",
-    linkedin: "https://linkedin.com",
+    name: "Rihard Romka",
+    title: "Project Engineer",
+    linkedin: "https://www.linkedin.com/in/rihard-romka/",
   },
 ];
 
@@ -33,7 +33,7 @@ const Team = () => {
             <span className="text-gradient">Crypto-Native</span> Team
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Polaris Nodes is run by a small, focused team combining hands-on node infrastructure expertise with a strong understanding of blockchain markets and well-managed, high-quality operations.
+            PolarisNodes is run by a small, focused team combining hands-on node infrastructure expertise with a strong understanding of blockchain markets and well-managed, high-quality operations.
           </p>
         </div>
 
