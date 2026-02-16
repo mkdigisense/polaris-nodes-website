@@ -10,10 +10,10 @@ const Contact = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
             Get in <span className="text-gradient">Touch</span>
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
+          <p className="text-muted-foreground text-lg leading-relaxed mb-6">
             We are always open to new opportunities and collaborations across the blockchain and crypto ecosystem.
           </p>
-          <p className="text-muted-foreground text-lg leading-relaxed">
+          <p className="text-lg leading-relaxed">
             <a href="mailto:marko.hiltunen@polarisnodes.fi">marko.hiltunen@polarisnodes.fi</a>
           </p>
         </div>
