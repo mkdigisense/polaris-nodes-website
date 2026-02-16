@@ -55,7 +55,7 @@ const Hero = () => {
           {/* CTA Button */}
           <div 
             className="animate-fade-in"
-            style={{ animationDelay: '0.4s', opacity: 0 }}
+            style={{ animationDelay: '0.5s', opacity: 0 }}
           >
             <a 
               href="#contact"
